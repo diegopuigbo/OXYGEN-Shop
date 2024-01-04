@@ -1,9 +1,9 @@
 * {
-margin: 0;
+    margin: 0;
 }
 
 .navbar {
-display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
@@ -32,13 +32,14 @@ display: flex;
     margin-top: 3em;
     padding-bottom: 0.75em;
 }
+
 .header__info {
     padding-bottom: 2em;
     font-size: 16px;
     width: 250px;
     margin-left: 1.5em;
     font-family: open sans;
-        font-weight: 400;
+    font-weight: 400;
 }
 
 .header__button {
@@ -50,14 +51,17 @@ display: flex;
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-family: open sans;
-        font-weight: 700;
+    font-weight: 700;
 }
+
 .popular__entries {
     text-align: center;
 }
+
 .popular__img {
     width: 100%;
 }
+
 .popular__fact {
     font-size: 30px;
     font-weight: 300;
@@ -68,16 +72,20 @@ display: flex;
     padding-left: 2.2em;
     font-family: raleway;
 }
+
 .popular__entries-img {
     margin-top: 2rem;
 }
+
 .popular__entries-img-circle {
     position: absolute;
 }
+
 .popular__entries-img-person {
     position: relative;
     padding-left: 2em;
 }
+
 .popular__entries-number {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -87,6 +95,7 @@ display: flex;
     line-height: 24px;
     letter-spacing: 0.2em;
 }
+
 .popular__entries-text {
     font-family: Raleway;
     font-size: 17px;
@@ -97,11 +106,13 @@ display: flex;
     color: rgb(165, 165, 165);
     text-align: center;
 }
+
 .popular__entries-img-eye {
     position: relative;
     padding-top: 1em;
     padding-left: 1.2em;
 }
+
 .popular__entries-text-products {
     font-family: Raleway;
     font-size: 17px;
@@ -114,12 +125,14 @@ display: flex;
     width: 7em;
     padding-left: 8em;
 }
+
 .popular__entries-img-files {
     position: relative;
     padding-top: 0.75em;
     padding-left: 2em;
     height: 2.5em;
 }
+
 .popular__entries-text-posts {
     font-family: Raleway;
     font-size: 17px;
@@ -133,31 +146,38 @@ display: flex;
     padding-left: 9em;
     padding-bottom: 3em;
 }
+
 .card__circle-img {
     position: absolute;
-    padding-left: 5em;
+    padding-left: 6em;
 }
 
 .card__computer-img {
     position: relative;
+    width: 12em;
+    height: 7em;
+    padding-right: 2em;
+    margin-top: 2em;
 }
+
 .card__article {
     width: 314px;
-    height: 340px;
+    height: auto;
     background-color: white;
     margin-bottom: 1em;
     margin-top: 1em;
 }
+
 .card__text {
     font-size: 30px;
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0em;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-    padding-left: 1em;
+    padding: 1em;
     font-family: raleway;
+
 }
+
 .card__text-info {
     font-size: 14px;
     font-weight: 400;
@@ -165,17 +185,44 @@ display: flex;
     letter-spacing: 0em;
     padding-left: 2em;
     font-family: open sans;
+    padding-bottom: 3em;
+    text-align: left;
+    padding-right: 2em;
+    padding-top: 1.5em;
 }
+
+.card__trumpet-img {
+    position: relative;
+    top: 1em;
+    right: 1em;
+}
+
+.card__rectangle-img {
+    position: absolute;
+}
+
 .card__img {
-    padding-left: 4em;
+
+    padding-left: 25%;
+    padding-top: 1em;
+
+    .card__mobile-image {
+        position: relative;
+        left: 0.3em;
+
+    }
+
+    .card__circle-img-mobile {
+        position: absolute;
+
+    }
 }
+
 .card {
     background: rgb(247, 247, 247);
     padding: 2em;
 }
-.card_mobile-img {
-    position: relative;
-}
+
 .card__text-shop {
     font-size: 30px;
     font-weight: 400;
@@ -187,6 +234,7 @@ display: flex;
     width: 218px;
     font-family: raleway;
 }
+
 .pricing__header {
     font-size: 36px;
     font-weight: 400;
@@ -195,9 +243,11 @@ display: flex;
     padding-bottom: 0.5em;
     font-family: raleway;
 }
+
 .pricing__container {
     height: auto;
 }
+
 .pricing__container-basic {
     position: absolute;
     width: 17em;
@@ -210,10 +260,12 @@ display: flex;
     align-items: center;
     padding-bottom: 3em;
 }
+
 .pricing__list {
     list-style: none;
     padding: 0;
 }
+
 .pricing__list-items {
     padding-top: 0.9em;
     font-size: 14px;
@@ -222,13 +274,15 @@ display: flex;
     text-align: left;
     font-family: open sans;
 }
+
 .pricing__container-basic-basic- {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-padding-left: 0.75em;
+    padding-left: 0.75em;
     padding-bottom: 1em;
 }
+
 .pricing__container-basic-price {
     font-size: 46px;
     font-weight: 300;
@@ -237,6 +291,7 @@ padding-left: 0.75em;
     color: rgb(251, 59, 100);
     font-family: open sans;
 }
+
 .pricing__basic-button {
     position: relative;
     width: 9.375em;
@@ -248,11 +303,13 @@ padding-left: 0.75em;
     background: rgb(235, 71, 110);
     color: rgb(255, 255, 255);
     font-family: open sans;
-        font-weight: 700;
+    font-weight: 700;
 }
+
 .pricing__container-separation {
     margin-top: 14em;
 }
+
 .pricing__container-professional {
     position: absolute;
     width: 21em;
@@ -265,6 +322,7 @@ padding-left: 0.75em;
     align-items: center;
     padding-bottom: 3em;
 }
+
 .pricing__container-professional-professional {
     font-size: 20px;
     font-weight: 700;
@@ -273,6 +331,7 @@ padding-left: 0.75em;
     padding-top: 3.5em;
     font-family: raleway;
 }
+
 .pricing__container-professional-price {
     font-size: 46px;
     font-weight: 300;
@@ -281,6 +340,7 @@ padding-left: 0.75em;
     padding-bottom: 0.15em;
     font-family: open sans;
 }
+
 .pricing__list-professional {
     padding-top: 1.6em;
     font-size: 14px;
@@ -290,6 +350,7 @@ padding-left: 0.75em;
     padding-right: 1.5em;
     font-family: open sans;
 }
+
 .pricing__limited-offer {
     font-size: 12px;
     font-weight: 700;
@@ -297,6 +358,7 @@ padding-left: 0.75em;
     color: rgb(19, 37, 59);
     font-family: raleway;
 }
+
 .pricing__professional-button {
     width: 150px;
     height: 50px;
@@ -307,8 +369,9 @@ padding-left: 0.75em;
     top: 16.3em;
     color: rgb(255, 255, 255);
     font-family: open sans;
-        font-weight: 700;
+    font-weight: 700;
 }
+
 .pricing__container-premium {
     border: 1px solid rgb(85, 223, 180);
     position: absolute;
@@ -322,6 +385,7 @@ padding-left: 0.75em;
     padding-bottom: 3em;
     margin-top: 1.5em;
 }
+
 .pricing__container-premium-price {
     font-size: 46px;
     font-weight: 300;
@@ -329,6 +393,7 @@ padding-left: 0.75em;
     color: rgb(85, 223, 180);
     font-family: open sans;
 }
+
 .pricing__container-professional-premium {
     font-size: 20px;
     font-weight: 700;
@@ -336,6 +401,7 @@ padding-left: 0.75em;
     padding-top: 3em;
     font-family: raleway;
 }
+
 .pricing__premium-button {
     position: relative;
     width: 9.375em;
@@ -346,7 +412,7 @@ padding-left: 0.75em;
     top: 16em;
     color: white;
     font-family: open sans;
-        font-weight: 700;
+    font-weight: 700;
 }
 
 .questions__header {
@@ -408,11 +474,11 @@ a {
     text-decoration: none;
     color: rgba(112, 112, 112, 1);
     font-family: Open Sans;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0px;
-        text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
 
 }
 
@@ -441,14 +507,14 @@ a {
     left: 8em;
     top: 1em;
     font-family: open sans;
-        font-weight: 700;
+    font-weight: 700;
 }
 
 .footer__display {
     display: flex;
     margin-top: 5em;
     justify-content: space-around;
-    width: 375px;
+    width: 100%;
     height: 89px;
     background: rgba(247, 247, 247, 1);
     box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
@@ -467,4 +533,15 @@ a {
     font-weight: 400;
     color: rgba(165, 165, 165, 1);
     font-family: open sans;
+}
+
+.card__mobile-image {
+    width: 10em;
+    height: 8em;
+}
+
+@media (min-width: 374px) {
+    .navbar {
+        background-color: blue;
+    }
 }
