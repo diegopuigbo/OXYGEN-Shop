@@ -19,7 +19,7 @@ body {
 		color: #08A6E4;
 		font-weight: 300;
 		font-size: 32px;
-		font-family: 'raleway';
+		font-family: 'Raleway';
 		padding-right: 2.5em;
 	}
 }
@@ -31,7 +31,7 @@ body {
 	&__sell {
 		margin-top: 3em;
 		margin-bottom: 0.75em;
-		font-family: 'raleway';
+		font-family: 'Raleway';
 		font-weight: 400;
 		text-align: center;
 	}
@@ -41,31 +41,29 @@ body {
 		font-size: 16px;
 		margin-left: 2em;
 		margin-right: 2em;
-		font-family: 'open sans';
+		font-family: 'Open Sans';
 		font-weight: 400;
 
 	}
 
 	&__button {
 		padding: 1.5em;
-		padding-left: 5em;
-		padding-right: 5em;
+		padding-left: 5.2em;
+		padding-right: 5.2em;
 		border-radius: 40px;
 		box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
 		background: rgb(8, 166, 228);
 		color: rgb(255, 255, 255);
 		font-size: 16px;
-		font-family: 'open sans';
+		font-family: 'Open Sans';
 		font-weight: 700;
 		border: none;
 	}
 }
 
 .popular__img {
-	width: 370px;
-	height: 370px;
-	object-fit: contain;
-	object-position: center center;
+	max-width: 100%;
+	padding-top: 50px;
 }
 
 .popular__entries {
@@ -101,7 +99,7 @@ body {
 	font-size: 30px;
 	font-weight: 300;
 	text-align: center;
-	font-family: 'raleway';
+	font-family: 'Raleway';
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-bottom: 1em;
@@ -148,41 +146,43 @@ body {
 
 		&__circle {
 			position: absolute;
-			width: 5em;
-			height: 5em;
-			left: 50%;
-
+			width: 6em;
+			height: 6em;
+			left: 52%;
+			margin-top: 0.7em;
 		}
 
 		&__circle-blue {
-			width: 7em;
-			height: 7em;
+			width: 8em;
+			height: 8em;
 			margin-top: 1em;
 			position: absolute;
 			margin-left: 1em;
+
 		}
 
 
 
 		&__mobile {
-			width: 8em;
-			height: 7em;
+			width: 10em;
+			height: 8em;
 			position: relative;
 			margin-left: 1.2em;
 			margin-top: 1.5em;
 		}
 
 		&__rectangle {
-			width: 19.75em;
-			height: 12.5em;
+			width: 19.5em;
+			height: 12.3em;
 			position: absolute;
-			margin-bottom: 10em;
 		}
 
 		&__trumpet {
 			position: relative;
-			width: 15em;
-			margin-top: 1.5em;
+			width: 19em;
+			height: 12em;
+			top: 3em;
+			right: 1em;
 		}
 	}
 
@@ -198,7 +198,8 @@ body {
 		line-height: 35px;
 		letter-spacing: 0em;
 		margin-left: 1em;
-		font-family: 'raleway';
+		font-family: 'Raleway';
+		margin-top: 0.2em;
 	}
 
 	&__text-info {
@@ -209,8 +210,8 @@ body {
 		padding-left: 1.5em;
 		padding-right: 1.5em;
 		padding-bottom: 2em;
-		margin-top: 1em;
-		font-family: 'open sans';
+		margin-top: 3em;
+		font-family: 'Open Sans';
 	}
 
 	&__text-info--brand {
@@ -221,8 +222,8 @@ body {
 		padding-left: 1.5em;
 		padding-right: 1.5em;
 		padding-bottom: 2em;
-		margin-top: 1em;
-		font-family: 'open sans';
+		margin-top: 1.5em;
+		font-family: 'Open Sans';
 	}
 
 	&__text-shop--increase {
@@ -232,7 +233,7 @@ body {
 		margin-left: 0.75em;
 		margin-right: 1.25em;
 		margin-top: 0.2em;
-		font-family: 'raleway';
+		font-family: 'Raleway';
 		padding-top: 1em;
 	}
 
@@ -242,10 +243,22 @@ body {
 		letter-spacing: 0em;
 		margin-left: 0.75em;
 		margin-right: 1.25em;
-		margin-top: 0.2em;
-		font-family: 'raleway';
+		margin-top: 1em;
+		font-family: 'Raleway';
+
 	}
 
+	&__text-shop-info {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 21px;
+		text-align: left;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		padding-bottom: 2em;
+		margin-top: 1em;
+		font-family: 'Open Sans';
+	}
 }
 
 
@@ -255,7 +268,7 @@ body {
 	text-align: center;
 	padding-top: 1.5em;
 	padding-bottom: 0.5em;
-	font-family: 'raleway';
+	font-family: 'Raleway';
 }
 
 .pricing__container {
@@ -264,36 +277,37 @@ body {
 	&-basic {
 		border-radius: 18px;
 		border: 1px solid rgb(251, 59, 100);
-		margin: 2em;
+		margin-bottom: 3em;
+		margin-left: 2.5em;
+		margin-right: 2.5em;
+		position: relative;
+		font-family: 'Raleway';
 
 		&-display {
-			display: inline-block;
-			padding-right: 3em;
-			padding-left: 3em;
-			padding-bottom: 5em;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
 		}
 
 		&-price {
 			font-size: 46px;
 			font-weight: 300;
 			color: rgb(251, 59, 100);
-			font-family: 'open sans';
+			font-family: 'Open Sans';
 		}
 	}
 
 	&-professional {
 		border-radius: 18px;
 		border: 1px solid rgb(7, 172, 230);
-		margin-left: 1.3em;
-		padding-bottom: 3em;
+		margin: 1.5em;
+		position: relative;
 
 		&-professional {
 			font-size: 20px;
 			font-weight: 700;
 			text-align: center;
-			padding-bottom: 0.5em;
-			padding-top: 3.5em;
-			font-family: 'raleway';
+			font-family: 'Raleway';
 		}
 
 		&-price {
@@ -302,29 +316,30 @@ body {
 			text-align: center;
 			color: rgb(7, 172, 230);
 			padding-bottom: 0.15em;
-			font-family: 'open sans';
+			font-family: 'Open Sans';
 		}
 	}
 
 	&-premium {
 		border: 1px solid rgb(85, 223, 180);
 		border-radius: 18px;
-
+		margin: 2.5em;
+		position: relative;
 
 		&-price {
 			font-size: 46px;
 			font-weight: 300;
 			text-align: center;
 			color: rgb(85, 223, 180);
-			font-family: 'open sans';
+			font-family: 'Open Sans';
 		}
 
 		&-professional {
 			font-size: 20px;
 			font-weight: 700;
 			text-align: center;
-			padding-top: 3em;
-			font-family: 'raleway';
+			padding-top: 1em;
+			font-family: 'Raleway';
 		}
 	}
 }
@@ -332,7 +347,8 @@ body {
 .pricing__list,
 .pricing__list-professional {
 	list-style: none;
-	display: inline-block;
+	padding-top: 1em;
+	padding-bottom: 2.5em;
 }
 
 .pricing__list-items,
@@ -342,7 +358,8 @@ body {
 	font-weight: 400;
 	padding-bottom: 0.2em;
 	text-align: left;
-	font-family: 'open sans';
+	font-family: 'Open Sans';
+	line-height: 1.7em;
 }
 
 .pricing__limited-offer {
@@ -350,7 +367,7 @@ body {
 	font-weight: 700;
 	text-align: center;
 	color: rgb(19, 37, 59);
-	font-family: 'raleway';
+	font-family: 'Raleway';
 }
 
 .pricing__basic-button,
@@ -360,30 +377,34 @@ body {
 	text-align: center;
 	background: transparent;
 	color: white;
-	font-family: 'open sans';
+	font-family: 'Open Sans';
 	font-weight: 700;
 	padding-left: 4em;
 	padding-right: 4em;
 	padding-top: 1em;
 	padding-bottom: 1em;
+	border: none;
 }
 
 .pricing__basic-button {
 	background: rgb(235, 71, 110);
-	left: 10em;
-	top: 14.5em;
+	position: absolute;
+	left: 25%;
+	top: 92%;
 }
 
 .pricing__professional-button {
 	background: rgb(7, 172, 230);
-	left: 9em;
-	top: 16.3em;
+	position: absolute;
+	left: 30%;
+	top: 92%;
 }
 
 .pricing__premium-button {
 	background: rgb(85, 223, 180);
-	left: 9.5em;
-	top: 16em;
+	position: absolute;
+	left: 25%;
+	top: 92%;
 }
 
 .questions__header {
@@ -391,7 +412,8 @@ body {
 	font-weight: 400;
 	text-align: left;
 	padding-left: 0.75em;
-	font-family: 'raleway';
+	font-family: 'Raleway';
+	margin-top: 2em;
 }
 
 .questions__leave {
@@ -400,7 +422,7 @@ body {
 	text-align: left;
 	padding-left: 2em;
 	padding-bottom: 2em;
-	font-family: 'open sans';
+	font-family: 'Open Sans';
 }
 
 .question__email {
@@ -410,7 +432,7 @@ body {
 	color: rgb(165, 165, 165);
 	padding-left: 0.75em;
 	padding-bottom: 1em;
-	font-family: 'open sans';
+	font-family: 'Open Sans';
 }
 
 .questions__email-img {
@@ -434,7 +456,7 @@ body {
 	font-weight: 600;
 	text-align: left;
 	letter-spacing: 3.2799999714px;
-	font-family: 'open sans';
+	font-family: 'Open Sans';
 }
 
 .question__separation {
@@ -444,7 +466,7 @@ body {
 a {
 	text-decoration: none;
 	color: rgba(112, 112, 112, 1);
-	font-family: 'open sans';
+	font-family: 'Open Sans';
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 16px;
@@ -454,17 +476,18 @@ a {
 
 .question__consent {
 	display: flex;
-	margin: 2em;
-	justify-content: space-around;
+	margin-top: 1em;
+	margin-left: 1.3em;
+	margin-bottom: 1.5em;
+
 }
 
 .question__link {
-	width: 20em;
+	width: 22.5em;
+	margin-left: 1em;
 }
 
-.question__checkbox {
-	padding-right: 0.5em;
-}
+
 
 .question__button {
 	width: 226px;
@@ -476,8 +499,9 @@ a {
 	position: relative;
 	left: 8em;
 	top: 1em;
-	font-family: 'open sans';
+	font-family: 'Open Sans';
 	font-weight: 700;
+	border: none;
 }
 
 .footer {
@@ -500,7 +524,7 @@ a {
 	font-size: 26px;
 	font-weight: 300;
 	color: rgba(8, 166, 228, 1);
-	font-family: 'raleway';
+	font-family: 'Raleway';
 
 }
 
@@ -508,10 +532,173 @@ a {
 	font-size: 11px;
 	font-weight: 400;
 	color: rgba(165, 165, 165, 1);
-	font-family: 'open sans';
+	font-family: 'Open Sans';
 
 }
 
 .footer__display-img {
 	display: inline-block;
+}
+
+.footer__display-img-tw {
+	margin-right: 1em;
+}
+
+.footer__display-img-fc {
+	margin-right: 1em;
+}
+
+@media (min-width: 500px) {
+	.navbar__logo {
+		margin-right: 35em;
+	}
+
+	.popular__img {
+		width: 100%;
+	}
+
+	.popular {
+		margin-top: 8em;
+		margin-bottom: 8em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.popular__entries-text {
+		width: 8em;
+	}
+
+	.card__article {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	.card__text-display {
+		width: 40%;
+		margin-left: 1em;
+		margin-top: 4em;
+		margin-bottom: 4em;
+	}
+
+	.card__img__computer {
+		margin-top: 6em;
+		margin-right: 25em;
+	}
+
+	.card {
+		padding-left: 10em;
+		padding-right: 15 em;
+		padding-top: 4em;
+		padding-bottom: 1em;
+	}
+
+	.card__text-info {
+		margin-top: 1em;
+	}
+
+	.pricing-display {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.pricing__container-basic-display {
+		display: block;
+	}
+
+	.pricing__container {
+
+
+		&-basic {
+			border-radius: 18px;
+			border: 1px solid rgb(251, 59, 100);
+			position: relative;
+			margin: 2.5em;
+			font-family: 'Raleway';
+
+			&-price {
+				font-size: 46px;
+				font-weight: 300;
+				color: rgb(251, 59, 100);
+				font-family: 'Open Sans';
+				margin-bottom: 0.4em;
+			}
+
+			&-display {
+				text-align: center;
+				padding-top: 1.5em;
+				padding-left: 6em;
+				padding-right: 6em;
+				padding-bottom: 4em;
+			}
+
+			&-professional {
+				border-radius: 18px;
+				border: 1px solid rgb(7, 172, 230);
+				margin: 1.5em;
+				position: relative;
+			}
+
+			&-premium {
+				border: 1px solid rgb(85, 223, 180);
+				border-radius: 18px;
+				margin: 2.5em;
+				position: relative;
+
+			}
+		}
+	}
+
+	.questions {
+		display: flex;
+		justify-content: center;
+
+		&__display {
+			margin-right: 5em;
+		}
+
+		&__form {
+			margin-top: 3.5em;
+			width: 30em;
+		}
+
+	}
+
+	.question__link {
+
+		margin-left: 1em;
+	}
+
+	.question__link {
+		width: 90%;
+		margin-left: 1em;
+	}
+
+	a {
+		text-align: start;
+
+	}
+
+	.question__consent {
+		display: flex;
+	}
+
+	.question__checkbox {
+		display: inline-block;
+	}
+
+	.question__button {
+		left: 50%;
+	}
+
+	.questions__header {
+		margin-bottom: 0.5em;
+	}
+
+	.footer__display {
+		margin-right: 70em;
+		margin-left: 5em;
+	}
 }
