@@ -1,16 +1,15 @@
-@import url(/style.scss);
-
 .popular {
 	&__img {
 		max-width: 100%;
 		padding-top: 50px;
 		display: none;
-	
 
-	&-mobile {
-		padding-top: 50px;
+
+		&-mobile {
+			padding-top: 50px;
+		}
 	}
-}
+
 	&__entries {
 		text-align: center;
 
