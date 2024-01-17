@@ -14,6 +14,7 @@
 		&__img {
 			max-width: 100%;
 			padding-top: 50px;
+			display: block;
 			width: 100%;
 
 			&-mobile {
@@ -141,12 +142,42 @@
 		}
 
 		&__container {
-			&-display {
-				text-align: center;
-				padding-top: 1.5em;
-				padding-left: 6em;
-				padding-right: 6em;
-				padding-bottom: 4em;
+			&-basic {
+				border-radius: 18px;
+				border: 1px solid rgb(251, 59, 100);
+				position: relative;
+				margin: 2.5em;
+				font-family: 'Raleway';
+
+				&-price {
+					font-size: 46px;
+					font-weight: 300;
+					color: rgb(251, 59, 100);
+					font-family: 'Open Sans';
+					margin-bottom: 0.4em;
+				}
+
+				&-display {
+					text-align: center;
+					padding-top: 1.5em;
+					padding-left: 6em;
+					padding-right: 6em;
+					padding-bottom: 4em;
+				}
+
+				&-professional {
+					border-radius: 18px;
+					border: 1px solid rgb(7, 172, 230);
+					margin: 1.5em;
+					position: relative;
+				}
+
+				&-premium {
+					border: 1px solid rgb(85, 223, 180);
+					border-radius: 18px;
+					margin: 2.5em;
+					position: relative;
+				}
 			}
 		}
 	}
