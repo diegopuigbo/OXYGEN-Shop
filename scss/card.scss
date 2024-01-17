@@ -1,0 +1,133 @@
+.card {
+	background: rgb(247, 247, 247);
+	padding: 2em;
+
+
+	&__img {
+		text-align: center;
+		&-brand{
+			text-align: center;
+		}
+
+		&__computer {
+			width: 11em;
+			height: 6em;
+			position: relative;
+			top: 2em;
+			margin-bottom: 3em;
+		}
+
+		&__circle {
+			position: absolute;
+			width: 6em;
+			height: 6em;
+			left: 52%;
+			margin-top: 0.7em;
+		}
+
+		&__circle-blue {
+			width: 8em;
+			height: 8em;
+			margin-top: 1em;
+			position: absolute;
+			margin-left: 1em;
+
+		}
+		&__mobile {
+			width: 10em;
+			height: 8em;
+			position: relative;
+			margin-left: 1.2em;
+			margin-top: 1.5em;
+		}
+
+		&__rectangle {
+			width: 19.5em;
+			height: 12.3em;
+			position: absolute;
+		}
+
+		&__trumpet {
+			position: relative;
+			width: 19em;
+			height: 12em;
+			top: 3em;
+			right: 1em;
+		}
+	}
+
+	&__article {
+		background-color: white;
+		margin-bottom: 2em;
+		margin-top: 1em;
+	}
+
+	&__text {
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 35px;
+		letter-spacing: 0em;
+		margin-left: 1em;
+		font-family: 'Raleway';
+		margin-top: 0.2em;
+
+
+		&-info {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 21px;
+			text-align: left;
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+			padding-bottom: 2em;
+			margin-top: 3em;
+			font-family: 'Open Sans';
+		}
+
+		&-info--brand {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 21px;
+			text-align: left;
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+			padding-bottom: 2em;
+			margin-top: 1.5em;
+			font-family: 'Open Sans';
+		}
+
+		&-shop--increase {
+			font-size: 30px;
+			font-weight: 400;
+			letter-spacing: 0em;
+			margin-left: 0.75em;
+			margin-right: 1.25em;
+			margin-top: 0.2em;
+			font-family: 'Raleway';
+			padding-top: 1em;
+		}
+
+		&-shop {
+			font-size: 30px;
+			font-weight: 400;
+			letter-spacing: 0em;
+			margin-left: 0.75em;
+			margin-right: 1.25em;
+			margin-top: 1em;
+			font-family: 'Raleway';
+
+		}
+
+		&-shop-info {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 21px;
+			text-align: left;
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+			padding-bottom: 2em;
+			margin-top: 1em;
+			font-family: 'Open Sans';
+		}
+	}
+}

@@ -1,0 +1,74 @@
+@import url(/style.scss);
+
+.popular {
+	&__img {
+		max-width: 100%;
+		padding-top: 50px;
+		display: none;
+	
+
+	&-mobile {
+		padding-top: 50px;
+	}
+}
+	&__entries {
+		text-align: center;
+
+		&-img {
+			position: relative;
+			margin-bottom: 1em;
+
+			&-circle {
+				position: absolute;
+			}
+
+			&-person {
+				position: relative;
+				left: 7%;
+			}
+
+			&-eye {
+				position: relative;
+				left: 7%;
+			}
+
+			&-files {
+				position: relative;
+				left: 10%;
+				padding-top: 0.5em;
+			}
+		}
+	}
+
+	&__fact {
+		font-size: 30px;
+		font-weight: 300;
+		text-align: center;
+		font-family: 'Raleway';
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-bottom: 1em;
+	}
+
+	&__entries-number {
+		margin-bottom: 1em;
+		font-family: 'Raleway';
+		font-size: 20px;
+		font-weight: 800;
+		line-height: 24px;
+		letter-spacing: 0.3em;
+		text-align: center;
+	}
+
+	&__entries-text {
+		font-family: 'Raleway';
+		font-size: 17px;
+		font-weight: 400;
+		line-height: 20px;
+		text-align: center;
+		color: rgb(165, 165, 165);
+		margin-bottom: 2em;
+		margin-left: 7em;
+		margin-right: 7em;
+	}
+}

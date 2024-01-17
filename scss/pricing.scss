@@ -1,0 +1,145 @@
+@import url(/style.scss);
+
+.pricing {
+	&__header {
+		font-size: 36px;
+		font-weight: 400;
+		text-align: center;
+		padding-top: 1.5em;
+		padding-bottom: 0.5em;
+		font-family: 'Raleway';
+	}
+
+	&__container {
+
+		&-basic,
+		&-professional,
+		&-premium {
+			border-radius: 18px;
+			position: relative;
+			font-family: 'Raleway';
+			transition: transform 0.3s, box-shadow 0.3s;
+
+			&-display {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			&
+
+			&-price {
+				font-size: 46px;
+				font-weight: 300;
+				font-family: 'Open Sans';
+			}
+		}
+		&-basic:hover,
+		&-professional:hover,
+		&-premium:hover {
+			transform: scale(1.1);
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+		}
+		&-basic {
+			border: 1px solid rgb(251, 59, 100);
+			margin: 2.5em;
+
+			&-price {
+				color: rgb(251, 59, 100);
+			}
+		}
+
+		&-professional {
+			border: 1px solid rgb(7, 172, 230);
+			margin: 2.5em;
+
+			&-professional {
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+			}
+
+			&-price {
+				text-align: center;
+				color: rgb(7, 172, 230);
+				padding-bottom: 0.15em;
+			}
+		}
+
+		&-premium {
+			border: 1px solid rgb(85, 223, 180);
+			border-radius: 18px;
+			margin: 2.5em;
+
+			&-price {
+				text-align: center;
+				color: rgb(85, 223, 180);
+			}
+
+			&-professional {
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+				padding-top: 1em;
+			}
+		}
+	}
+
+	&__list,
+	&__list-professional {
+		list-style: none;
+		padding-top: 1em;
+		padding-bottom: 2.5em;
+	}
+
+	&__list-items,
+	&__list-professional {
+		padding-top: 0.9em;
+		font-size: 14px;
+		font-weight: 400;
+		padding-bottom: 0.2em;
+		text-align: left;
+		font-family: 'Open Sans';
+		line-height: 1.7em;
+	}
+
+	&__limited-offer {
+		font-size: 12px;
+		font-weight: 700;
+		text-align: center;
+		color: rgb(19, 37, 59);
+		font-family: 'Raleway';
+	}
+
+	&__basic-button,
+	&__professional-button,
+	&__premium-button {
+		border-radius: 23px;
+		text-align: center;
+		background: transparent;
+		color: white;
+		font-family: 'Open Sans';
+		font-weight: 700;
+		padding-left: 4em;
+		padding-right: 4em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border: none;
+		position: absolute;
+		top: 92%;
+	}
+
+	&__basic-button {
+		background: rgb(235, 71, 110);
+		left: 25%;
+	}
+
+	&__professional-button {
+		background: rgb(7, 172, 230);
+		left: 25%;
+	}
+
+	&__premium-button {
+		background: rgb(85, 223, 180);
+		left: 25%;
+	}
+}

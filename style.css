@@ -58,8 +58,11 @@ body {
 .popular__img {
   max-width: 100%;
   padding-top: 50px;
+  display: none;
 }
-
+.popular__img-mobile {
+  padding-top: 50px;
+}
 .popular__entries {
   text-align: center;
 }
@@ -83,7 +86,6 @@ body {
   left: 10%;
   padding-top: 0.5em;
 }
-
 .popular__fact {
   font-size: 30px;
   font-weight: 300;
@@ -93,7 +95,6 @@ body {
   margin-right: 1em;
   margin-bottom: 1em;
 }
-
 .popular__entries-number {
   margin-bottom: 1em;
   font-family: "Raleway";
@@ -103,7 +104,6 @@ body {
   letter-spacing: 0.3em;
   text-align: center;
 }
-
 .popular__entries-text {
   font-family: "Raleway";
   font-size: 17px;
@@ -121,6 +121,9 @@ body {
   padding: 2em;
 }
 .card__img {
+  text-align: center;
+}
+.card__img-brand {
   text-align: center;
 }
 .card__img__computer {
@@ -238,77 +241,68 @@ body {
   padding-bottom: 0.5em;
   font-family: "Raleway";
 }
-
-.pricing__container-basic {
+.pricing__container-basic, .pricing__container-professional, .pricing__container-premium {
   border-radius: 18px;
-  border: 1px solid rgb(251, 59, 100);
-  margin-bottom: 3em;
-  margin-left: 2.5em;
-  margin-right: 2.5em;
   position: relative;
   font-family: "Raleway";
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.pricing__container-basic-display {
+.pricing__container-basic-display, .pricing__container-professional-display, .pricing__container-premium-display {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.pricing__container-basic-price {
+.pricing__container-basic .pricing__container-basic-price, .pricing__container-basic .pricing__container-professional-price, .pricing__container-basic .pricing__container-premium-price, .pricing__container-professional .pricing__container-basic-price, .pricing__container-professional .pricing__container-professional-price, .pricing__container-professional .pricing__container-premium-price, .pricing__container-premium .pricing__container-basic-price, .pricing__container-premium .pricing__container-professional-price, .pricing__container-premium .pricing__container-premium-price {
   font-size: 46px;
   font-weight: 300;
-  color: rgb(251, 59, 100);
   font-family: "Open Sans";
 }
+.pricing__container-basic:hover, .pricing__container-professional:hover, .pricing__container-premium:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.pricing__container-basic {
+  border: 1px solid rgb(251, 59, 100);
+  margin: 2.5em;
+}
+.pricing__container-basic-price {
+  color: rgb(251, 59, 100);
+}
 .pricing__container-professional {
-  border-radius: 18px;
   border: 1px solid rgb(7, 172, 230);
-  margin: 1.5em;
-  position: relative;
+  margin: 2.5em;
 }
 .pricing__container-professional-professional {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  font-family: "Raleway";
 }
 .pricing__container-professional-price {
-  font-size: 46px;
-  font-weight: 300;
   text-align: center;
   color: rgb(7, 172, 230);
   padding-bottom: 0.15em;
-  font-family: "Open Sans";
 }
 .pricing__container-premium {
   border: 1px solid rgb(85, 223, 180);
   border-radius: 18px;
   margin: 2.5em;
-  position: relative;
 }
 .pricing__container-premium-price {
-  font-size: 46px;
-  font-weight: 300;
   text-align: center;
   color: rgb(85, 223, 180);
-  font-family: "Open Sans";
 }
 .pricing__container-premium-professional {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
   padding-top: 1em;
-  font-family: "Raleway";
 }
-
-.pricing__list,
-.pricing__list-professional {
+.pricing__list, .pricing__list-professional {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 2.5em;
 }
-
-.pricing__list-items,
-.pricing__list-professional {
+.pricing__list-items, .pricing__list-professional {
   padding-top: 0.9em;
   font-size: 14px;
   font-weight: 400;
@@ -317,7 +311,6 @@ body {
   font-family: "Open Sans";
   line-height: 1.7em;
 }
-
 .pricing__limited-offer {
   font-size: 12px;
   font-weight: 700;
@@ -325,10 +318,7 @@ body {
   color: rgb(19, 37, 59);
   font-family: "Raleway";
 }
-
-.pricing__basic-button,
-.pricing__professional-button,
-.pricing__premium-button {
+.pricing__basic-button, .pricing__professional-button, .pricing__premium-button {
   border-radius: 23px;
   text-align: center;
   background: transparent;
@@ -340,27 +330,20 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
   border: none;
+  position: absolute;
+  top: 92%;
 }
-
 .pricing__basic-button {
   background: rgb(235, 71, 110);
-  position: absolute;
   left: 25%;
-  top: 92%;
 }
-
 .pricing__professional-button {
   background: rgb(7, 172, 230);
-  position: absolute;
-  left: 30%;
-  top: 92%;
+  left: 25%;
 }
-
 .pricing__premium-button {
   background: rgb(85, 223, 180);
-  position: absolute;
   left: 25%;
-  top: 92%;
 }
 
 .questions__header {
@@ -371,7 +354,6 @@ body {
   font-family: "Raleway";
   margin-top: 2em;
 }
-
 .questions__leave {
   font-size: 16px;
   font-weight: 400;
@@ -380,8 +362,7 @@ body {
   padding-bottom: 2em;
   font-family: "Open Sans";
 }
-
-.question__email {
+.questions__email {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
@@ -390,22 +371,28 @@ body {
   padding-bottom: 1em;
   font-family: "Open Sans";
 }
-
 .questions__email-img {
   display: flex;
   padding-left: 1.75em;
 }
-
-.information__line {
-  border: 0.5px solid rgb(149, 152, 154);
-  padding-top: 4em;
+.questions__form__checkbox {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: top;
+  margin-left: 2em;
 }
-
-.separation-line {
-  margin: 2em;
+.questions__form__checkbox-text {
+  display: inline-block;
+  width: 75%;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #707070;
 }
-
-.form-text {
+.questions__form-text {
   padding-left: 2.3em;
   color: rgb(8, 166, 228);
   font-size: 11px;
@@ -414,44 +401,44 @@ body {
   letter-spacing: 3.2799999714px;
   font-family: "Open Sans";
 }
-
-.question__separation {
-  margin-top: 2em;
+.questions__form-input {
+  width: 85%;
+  margin-right: 1em;
+  margin-left: 2em;
+  border: none;
+  border-bottom: 1px solid #95989a;
+  line-height: 40px;
+  margin-bottom: 2em;
 }
-
-a {
-  text-decoration: none;
-  color: rgb(112, 112, 112);
+.questions__form-checkbox {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: top;
+  margin-left: 2em;
+}
+.questions__form-checkbox-text {
+  display: inline-block;
+  width: 75%;
   font-family: "Open Sans";
-  font-size: 12px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
-  text-align: left;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #707070;
 }
-
-.question__consent {
-  display: flex;
-  margin-top: 1em;
-  margin-left: 1.3em;
-  margin-bottom: 1.5em;
-}
-
-.question__link {
-  width: 22.5em;
-  margin-left: 1em;
-}
-
-.question__button {
-  width: 226px;
-  height: 57px;
+.questions__button {
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   border-radius: 35px;
   background: rgb(8, 166, 228);
   color: white;
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
   position: relative;
-  left: 8em;
-  top: 1em;
+  left: 7em;
+  top: 3em;
   font-family: "Open Sans";
   font-weight: 700;
   border: none;
@@ -464,7 +451,6 @@ a {
   background: rgb(247, 247, 247);
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
 }
-
 .footer__display {
   align-items: center;
   display: inline-block;
@@ -472,14 +458,21 @@ a {
   padding-top: 1em;
   padding-left: 1em;
 }
-
-.footer_icon {
+.footer__display-img {
+  display: inline-block;
+}
+.footer__display-img-tw {
+  margin-right: 1em;
+}
+.footer__display-img-fc {
+  margin-right: 1em;
+}
+.footer__icon {
   font-size: 26px;
   font-weight: 300;
   color: rgb(8, 166, 228);
   font-family: "Raleway";
 }
-
 .footer__rights {
   font-size: 11px;
   font-weight: 400;
@@ -487,24 +480,9 @@ a {
   font-family: "Open Sans";
 }
 
-.footer__display-img {
-  display: inline-block;
-}
-
-.footer__display-img-tw {
-  margin-right: 1em;
-}
-
-.footer__display-img-fc {
-  margin-right: 1em;
-}
-
 @media (min-width: 500px) {
   .navbar__logo {
     margin-right: 35em;
-  }
-  .popular__img {
-    width: 100%;
   }
   .popular {
     margin-top: 8em;
@@ -512,33 +490,101 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+  }
+  .popular__img {
+    max-width: 100%;
+    padding-top: 50px;
+    display: block;
+  }
+  .popular__img-mobile {
+    padding-top: 50px;
+    display: none;
   }
   .popular__entries-text {
     width: 8em;
   }
-  .card__article {
+  .card {
+    padding-left: 25em;
+    padding-right: 25em;
+    padding-top: 4em;
+    padding-bottom: 1em;
+  }
+  .card__article--be {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+  .card__article-shop {
+    display: flex;
   }
   .card__text-display {
     width: 40%;
     margin-left: 1em;
     margin-top: 4em;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
   .card__img__computer {
-    margin-top: 6em;
-    margin-right: 25em;
+    margin-top: 4em;
+    margin-right: 12em;
+    height: 10em;
+    width: 18em;
+    margin-bottom: 6em;
   }
-  .card {
-    padding-left: 10em;
-    padding-right: 15 em;
-    padding-top: 4em;
-    padding-bottom: 1em;
+  .card__img__circle {
+    width: 8em;
+    height: 8em;
+    left: 62%;
+    margin-top: 3em;
+  }
+  .card__img__mobile {
+    margin-right: 16em;
+    width: 20em;
+    height: 18em;
+    margin-left: 4em;
+  }
+  .card__img__circle-blue {
+    height: 17em;
+    width: 17em;
+    margin-left: 4em;
   }
   .card__text-info {
-    margin-top: 1em;
+    margin-top: 2em;
+    width: 30em;
+  }
+  .card__text-shop-info {
+    width: 30em;
+  }
+  .card__text-shop {
+    width: 8em;
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+  .card__img__rectangle {
+    width: 31.2em;
+    height: 18.5em;
+    border-left: 70px solid rgb(247, 247, 247);
+  }
+  .card__text-display-brand {
+    width: 42%;
+    margin-left: 1em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    margin-right: 8em;
+  }
+  .card__img__trumpet {
+    top: 5em;
+    left: 9em;
+  }
+  .card__img-brand {
+    background-color: #95989a;
+  }
+  .card__text-shop--increase {
+    padding-top: 0;
+    width: 70%;
+  }
+  .pricing__basic-button, .pricing__professional-button, .pricing__premium-button {
+    top: 95%;
   }
   .pricing-display {
     display: flex;
@@ -592,31 +638,26 @@ a {
     margin-top: 3.5em;
     width: 30em;
   }
-  .question__link {
+  .questions__link {
     margin-left: 1em;
-  }
-  .question__link {
     width: 90%;
     margin-left: 1em;
   }
-  a {
-    text-align: start;
-  }
-  .question__consent {
+  .questions__consent {
     display: flex;
   }
-  .question__checkbox {
+  .questions__checkbox {
     display: inline-block;
   }
-  .question__button {
+  .questions__button {
     left: 50%;
   }
   .questions__header {
     margin-bottom: 0.5em;
   }
   .footer__display {
-    margin-right: 70em;
-    margin-left: 5em;
+    margin-right: 75em;
+    margin-left: 10em;
   }
 }
 
