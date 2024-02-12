@@ -14,28 +14,50 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;800&family=Work+Sans&display=swap"
         rel="stylesheet" />
+    <script type="module" src="resources/mail.js" defer></script>
+    <script type="module" src="resources/popup.js" defer></script>
+    <script type="module" src="resources/pricing.js" defer></script>
+    <script src="resources/form.js" defer></script>
+    <script src="resources/scroller.js" defer></script>
+    <script type="module" src="resources/validation.js" defer></script>
+    <script type="module" src="resources/slider.js" defer></script>
+    <script type="module" src="resources/burger.js" defer></script>
 </head>
 
 <body>
     <nav class="navbar">
-
-        <h1 class="navbar__logo">OXYGENShop</h1>
-        <svg class="navbar__menu__icon" width="20" height="12" viewBox="0 0 20 12" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect y="10" width="20" height="2" fill="#07ACE6" />
-            <rect y="5" width="20" height="2" fill="#07ACE6" />
-            <rect width="20" height="2" fill="#07ACE6" />
-        </svg>
-
-
+        <div class="progress-container">
+            <div class="progress-bar" id="percentage-scroller-bar"></div>
+        </div>
+        <div>
+            <h1 class="navbar__logo">OXYGENShop</h1>
+            <img src="src/Menu.png" id="icon-1" class="icon icon-1" />
+            <img src="src/close.png" id="icon-2" class="icon icon-2" />
+            <div id="navbar" class="navbar-li">
+                <ul>
+                    <li><a href="#header">WHY US</a></li>
+                    <li><a href="#card">BENEFITS</a></li>
+                    <li><a href="#pricing">PRICES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <header class="header">
+    <header class="header" id="header">
         <h1 class="header__sell">Sell More!</h1>
         <p class="header__info">Open shop on our plataform and increase sales</p>
 
         <button class="header__button">Open you Shop</button>
+        <div class="popup" id="subscribePopup">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <h2>Subscribe to our Newsletter</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <button id="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
     </header>
-
     <section>
         <img class="popular__img" src="src/background.png" />
         <img class="popular__img-mobile" src="src/Background 1.png" />
@@ -133,7 +155,7 @@
             </article>
         </div>
     </section>
-    <section class="card">
+    <section class="card" id="card">
         <article class="card__article">
             <div class="card__article--be">
                 <div class="card__img">
@@ -146,7 +168,8 @@
                 </div>
                 <div class="card__text-display">
                     <h3 class="card__text">Be always first</h3>
-                    <p class="card__text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p class="card__text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
                         tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
@@ -171,7 +194,8 @@
             <div class="card__article-shop">
                 <div class="card__text-display-brand">
                     <h3 class="card__text-shop--increase">Increase recognition your brand!</h3>
-                    <p class="card__text-info--brand">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    <p class="card__text-info--brand">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
                         eiusmod
                         tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -185,7 +209,17 @@
         </article>
     </section>
 
-    <section class="pricing">
+    <div class="currency-selector">
+        <label for="currency">Currency:</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+    </div>
+
+
+    <section class="pricing" id="pricing">
         <h1 class="pricing__header">Pricing</h1>
         <div class="pricing-display">
             <div class="pricing__container">
@@ -194,7 +228,7 @@
                         <div>
                             <h3 class="pricing__container-header">Basic
                             </h3>
-                            <p class="pricing__container-basic-price">$0</p>
+                            <p class="pricing__container-basic-price" id="basic">$0</p>
                         </div>
                         <ul class="pricing__list">
                             <li class="pricing__list-items">
@@ -261,7 +295,7 @@
                 <div class="pricing__container-basic-display">
                     <div>
                         <h3 class="pricing__container-professional-professional">Professional</h3>
-                        <p class="pricing__container-professional-price">$25</p>
+                        <p class="pricing__container-professional-price" id="pro">$25</p>
                         <p class="pricing__limited-offer">Limited offer</p>
                     </div>
                     <div>
@@ -329,7 +363,7 @@
                 <div class="pricing__container-basic-display">
                     <div>
                         <h3 class="pricing__container-professional-professional">Premium</h3>
-                        <p class="pricing__container-premium-price">$60</p>
+                        <p class="pricing__container-premium-price" id="premium">$60</p>
                         <p class="pricing__limited-offer">Limited offer</p>
                     </div>
                     <div>
@@ -397,7 +431,16 @@
 
     </section>
 
-    <section class="questions">
+    <div class="slider-container">
+        <div id="slider" class="slider">
+            <img src="src/moon.jpg" alt="Image 1" class="slider-img">
+            <img src="src/wolf.jpg" alt="Image 2" class="slider-img">
+            <img src="src/winter.jpg" alt="Image 3" class="slider-img">
+        </div>
+        <div id="slider-dots" class="slider-dots"></div>
+    </div>
+
+    <section class="questions" id="contact">
         <div class="questions__display">
             <h1 class="questions__header">Any questions?</h1>
             <h5 class="questions__leave"> Leave your email address or call us!</h5>
@@ -425,30 +468,32 @@
         <div class="questions__form">
             <div>
                 <div class="questions__separation">
-                    <label class="questions__form-text">NAME</p>
-                        <input type="text" class="questions__form-input"></label>
+                    <label class="questions__form-text">NAME</label>
+                    <input type="text" id="nameInput" class="questions__form-input">
                 </div>
-                <div>
-                    <label class="questions__form-text">EMAIL</p>
-                        <input type="text" class="questions__form-input"></label>
+                <div class="questions__separation">
+                    <label class="questions__form-text">EMAIL</label>
+                    <input type="text" id="emailInput" class="questions__form-input">
                 </div>
             </div>
             <div class="questions__consent">
-                <input type="checkbox" class="questions__form-checkbox">
-
+                <input type="checkbox" id="consentCheckbox" class="questions__form-checkbox">
                 <p class="questions__form-checkbox-text">I hereby give consent for my personal data
                     included
                     in my
                     application to be processed for the purposes of the
-                    recruitment process under the European Parliament’s and Council of the European Union Regulation on
+                    recruitment process under the European Parliament’s and Council of the European Union Regulation
+                    on
                     the
-                    Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data
+                    Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal
+                    data
                     and on
                     the
                     free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
             </div>
-            <button class="questions__button">Send</button>
+            <button id="submitButton" class="questions__button">Send</button>
         </div>
+
     </section>
     <footer>
         <div class="footer">
