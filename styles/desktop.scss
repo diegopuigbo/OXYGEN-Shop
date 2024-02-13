@@ -1,6 +1,8 @@
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
 	.navbar__logo {
-		margin-right: 35em;
+		display: flex;
+		margin-left: 5em;
+		margin-right: 20em;
 	}
 
 
@@ -244,5 +246,37 @@
 
 	}
 
+	.icon {
+		display: none !important;
 
+	}
+
+
+
+	.navbar ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		text-align: center;
+		position: static;
+		top: 0;
+		left: 0;
+		background-color: none;
+		box-shadow: none;
+
+	}
+
+	.navbar ul li {
+		margin-right: 4em;
+		margin-top: 0.75em;
+
+	}
+
+	.navbar {
+		display: flex;
+	}
+
+	.nav {
+		display: flex;
+	}
 }

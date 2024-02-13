@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     icon1.addEventListener("click", toggleDropdown);
     icon2.addEventListener("click", closeDropdown);
-    window.addEventListener("resize", adjustDropdown);
+
 
 
 
@@ -23,16 +23,4 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".navbar").classList.remove("active");
     }
 
-
-    function adjustDropdown() {
-        if (window.innerWidth >= 1000) {
-            icon1.style.display = "inline";
-            icon2.style.display = "none";
-            navbarMenu.style.display = "inline-block";
-            navbar.style.height = "auto";
-            navbar.style.boxShadow = "none";
-        } else {
-            closeDropdown();
-        }
-    }
 });
