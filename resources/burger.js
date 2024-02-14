@@ -22,5 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
         navbarMenu.style.display = "none";
         document.querySelector(".navbar").classList.remove("active");
     }
-
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 1200) {
+            navbarMenu.style.display = "flex";
+        } else {
+            navbarMenu.style.display = "none";
+        }
+    });
 });
+
