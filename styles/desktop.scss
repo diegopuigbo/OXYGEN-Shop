@@ -1,8 +1,8 @@
 @media (min-width: 1000px) {
 	.navbar__logo {
 		display: flex;
-		margin-left: 5em;
-		margin-right: 20em;
+
+
 	}
 
 
@@ -32,96 +32,104 @@
 	}
 
 	.card {
-		padding-left: 25em;
-		padding-right: 25em;
-		padding-top: 4em;
-		padding-bottom: 1em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+
+		&__article {
+			width: 60%;
+			min-height: 22em;
+			margin-top: 4em;
+		}
 
 		&__article--be {
 			display: flex;
 			flex-direction: row-reverse;
 			justify-content: space-between;
+
 		}
 
 		&__article-shop {
 			display: flex;
+			justify-content: space-between;
 		}
 
 		&__text-display {
 			width: 40%;
-			margin-left: 1em;
-			margin-top: 4em;
-			margin-bottom: 2em;
 		}
 
-		&__img__computer {
-			margin-top: 4em;
-			margin-right: 12em;
-			height: 10em;
-			width: 18em;
-			margin-bottom: 6em;
-		}
-
-		&__img__circle {
-			width: 8em;
-			height: 8em;
-			left: 62%;
+		&__text {
 			margin-top: 3em;
 		}
 
+		&__img {
+			position: relative;
+		}
+
+		&__img__computer {
+			height: 14em;
+			width: 24em;
+			right: 4em;
+			top: 5em;
+		}
+
+		&__img__circle {
+			position: absolute;
+			width: 10em;
+			height: 10em;
+			left: 44.5%;
+			top: 1em;
+		}
+
 		&__img__mobile {
-			margin-right: 16em;
-			width: 20em;
-			height: 18em;
+			width: 22em;
+			height: 20em;
 			margin-left: 4em;
 		}
 
 		&__img__circle-blue {
-			height: 17em;
-			width: 17em;
+			height: 19em;
+			width: 19em;
 			margin-left: 4em;
 		}
 
 		&__text-info {
-			margin-top: 2em;
-			width: 30em;
+			max-width: 30em;
 		}
 
 		&__text-shop-info {
-			width: 30em;
+			max-width: 30em;
 		}
 
 		&__text-shop {
 			width: 8em;
 			margin-bottom: 1em;
-			margin-top: 0;
+			margin-top: 2.5em;
 		}
 
 		&__img__rectangle {
-			width: 31.2em;
-			height: 18.5em;
-			border-left: 70px solid rgb(247, 247, 247);
+			width: 25em;
+			height: 22em;
 		}
 
 		&__text-display-brand {
-			width: 42%;
-			margin-left: 1em;
-			margin-top: 4em;
-			margin-bottom: 2em;
-			margin-right: 8em;
+			max-width: 42%;
 		}
 
 		&__img__trumpet {
-			top: 5em;
-			left: 9em;
+			top: 7em;
+			left: 2em;
 		}
 
 		&__img-brand {
-			background-color: #95989a;
+			background-color: rgb(247, 247, 247);
+			width: 30em;
+			height: 22em;
 		}
 
 		&__text-shop--increase {
-			padding-top: 0;
+			margin-top: 1em;
 			width: 70%;
 		}
 	}
@@ -222,9 +230,16 @@
 	}
 
 	.footer {
+		display: flex;
+		justify-content: space-between;
+
 		&__display {
-			margin-right: 75em;
-			margin-left: 10em;
+			margin-left: 2em;
+		}
+
+		&__display-img {
+			margin-right: 5em;
+			margin-top: 2em;
 		}
 	}
 
@@ -251,6 +266,10 @@
 
 	}
 
+	.navbar.active {
+		position: fixed;
+
+	}
 
 
 	.navbar ul {
@@ -258,25 +277,31 @@
 		padding: 0;
 		display: flex;
 		text-align: center;
-		position: static;
-		top: 0;
-		left: 0;
 		background-color: none;
 		box-shadow: none;
+		height: 3em;
+		justify-content: space-between;
 
 	}
 
 	.navbar ul li {
-		margin-right: 4em;
-		margin-top: 0.75em;
+		margin-right: 2em;
+		margin-top: 1em;
+		margin-bottom: 0;
+		background-color: none;
+		align-items: center;
 
 	}
 
 	.navbar {
 		display: flex;
+		justify-content: space-between;
+		padding: 1em;
 	}
 
 	.nav {
+		width: 100%;
 		display: flex;
+		justify-content: space-around;
 	}
 }
