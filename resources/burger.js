@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("resize", function () {
         if (window.innerWidth > 1000) {
             navbarMenu.style.display = "flex";
+            document.querySelector(".navbar").classList.remove("active");
         } else {
             navbarMenu.style.display = "none";
         }
