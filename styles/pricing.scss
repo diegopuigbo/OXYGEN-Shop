@@ -1,4 +1,6 @@
 .pricing {
+	margin-bottom: 3em;
+
 	&__header {
 		font-size: 36px;
 		font-weight: 400;
@@ -17,11 +19,17 @@
 			position: relative;
 			font-family: 'Raleway';
 			transition: transform 0.3s, box-shadow 0.3s;
+			max-width: 20em;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 2em;
+			margin-top: 2em;
 
 			&-display {
 				display: flex;
 				justify-content: space-around;
 				align-items: center;
+
 			}
 
 			& &-price {
@@ -40,7 +48,8 @@
 
 		&-basic {
 			border: 1px solid rgb(251, 59, 100);
-			margin: 2.5em;
+
+
 
 			&-price {
 				color: rgb(251, 59, 100);
@@ -49,7 +58,7 @@
 
 		&-professional {
 			border: 1px solid rgb(7, 172, 230);
-			margin: 2.5em;
+
 
 			&-professional {
 				font-size: 20px;
@@ -67,7 +76,7 @@
 		&-premium {
 			border: 1px solid rgb(85, 223, 180);
 			border-radius: 18px;
-			margin: 2.5em;
+
 
 			&-price {
 				text-align: center;

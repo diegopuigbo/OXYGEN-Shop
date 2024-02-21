@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".navbar").classList.remove("active");
     }
     window.addEventListener("resize", function () {
-        if (window.innerWidth > 1200) {
+        if (window.innerWidth > 1000) {
             navbarMenu.style.display = "flex";
         } else {
             navbarMenu.style.display = "none";

@@ -6,6 +6,7 @@
 	text-align: left;
 	transition: all 0.3s;
 	margin-bottom: 1em;
+	position: relative;
 }
 
 .navbar.active {
@@ -22,10 +23,14 @@
 	font-family: 'Raleway';
 	padding-right: 2.5em;
 	margin-left: 1em;
+
 }
 
 .icon {
 	cursor: pointer;
+	position: absolute;
+	right: 2em;
+	top: 2.2em;
 }
 
 .icon-2 {

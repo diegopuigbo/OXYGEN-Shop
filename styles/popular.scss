@@ -17,24 +17,25 @@
 		&-img {
 			position: relative;
 			margin-bottom: 1em;
+			text-align: center;
 
 			&-circle {
-				position: absolute;
+				position: relative;
 			}
 
 			&-person {
-				position: relative;
-				left: 7%;
+				position: absolute;
+				left: 50%;
 			}
 
 			&-eye {
-				position: relative;
-				left: 7%;
+				position: absolute;
+				left: 50%;
 			}
 
 			&-files {
-				position: relative;
-				left: 10%;
+				position: absolute;
+				left: 50%;
 				padding-top: 0.5em;
 			}
 		}

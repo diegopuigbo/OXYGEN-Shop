@@ -6,6 +6,7 @@
   text-align: left;
   transition: all 0.3s;
   margin-bottom: 1em;
+  position: relative;
 }
 
 .navbar.active {
@@ -26,6 +27,9 @@
 
 .icon {
   cursor: pointer;
+  position: absolute;
+  right: 2em;
+  top: 2.2em;
 }
 
 .icon-2 {
@@ -161,21 +165,22 @@ button:hover {
 .popular__entries-img {
   position: relative;
   margin-bottom: 1em;
+  text-align: center;
 }
 .popular__entries-img-circle {
-  position: absolute;
+  position: relative;
 }
 .popular__entries-img-person {
-  position: relative;
-  left: 7%;
+  position: absolute;
+  left: 50%;
 }
 .popular__entries-img-eye {
-  position: relative;
-  left: 7%;
+  position: absolute;
+  left: 50%;
 }
 .popular__entries-img-files {
-  position: relative;
-  left: 10%;
+  position: absolute;
+  left: 50%;
   padding-top: 0.5em;
 }
 .popular__fact {
@@ -247,7 +252,7 @@ button:hover {
   margin-top: 1.5em;
 }
 .card__img__rectangle {
-  width: 19.5em;
+  width: 19.4em;
   height: 12.3em;
   position: absolute;
 }
@@ -262,26 +267,36 @@ button:hover {
   background-color: white;
   margin-bottom: 2em;
   margin-top: 1em;
+  max-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card__text {
   font-size: 30px;
   font-weight: 400;
-  line-height: 35px;
   letter-spacing: 0em;
-  margin-left: 1em;
-  font-family: "Raleway";
+  margin-left: 0.75em;
+  margin-right: 1.25em;
   margin-top: 0.2em;
+  font-family: "Raleway";
+  padding-top: 1em;
+  max-width: 8em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card__text-info {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  text-align: left;
+  text-align: justify;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 2em;
   margin-top: 3em;
   font-family: "Open Sans";
+  max-width: 25em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card__text-info--brand {
   font-size: 16px;
@@ -293,6 +308,9 @@ button:hover {
   padding-bottom: 2em;
   margin-top: 1.5em;
   font-family: "Open Sans";
+  max-width: 22em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card__text-shop--increase {
   font-size: 30px;
@@ -303,6 +321,9 @@ button:hover {
   margin-top: 0.2em;
   font-family: "Raleway";
   padding-top: 1em;
+  max-width: 8em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card__text-shop {
   font-size: 30px;
@@ -312,6 +333,9 @@ button:hover {
   margin-right: 1.25em;
   margin-top: 1em;
   font-family: "Raleway";
+  max-width: 8em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card__text-shop-info {
   font-size: 14px;
@@ -323,8 +347,15 @@ button:hover {
   padding-bottom: 2em;
   margin-top: 1em;
   font-family: "Open Sans";
+  max-width: 25em;
+  min-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.pricing {
+  margin-bottom: 3em;
+}
 .pricing__header {
   font-size: 36px;
   font-weight: 400;
@@ -338,6 +369,11 @@ button:hover {
   position: relative;
   font-family: "Raleway";
   transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 .pricing__container-basic-display, .pricing__container-professional-display, .pricing__container-premium-display {
   display: flex;
@@ -355,14 +391,12 @@ button:hover {
 }
 .pricing__container-basic {
   border: 1px solid rgb(251, 59, 100);
-  margin: 2.5em;
 }
 .pricing__container-basic-price {
   color: rgb(251, 59, 100);
 }
 .pricing__container-professional {
   border: 1px solid rgb(7, 172, 230);
-  margin: 2.5em;
 }
 .pricing__container-professional-professional {
   font-size: 20px;
@@ -377,7 +411,6 @@ button:hover {
 .pricing__container-premium {
   border: 1px solid rgb(85, 223, 180);
   border-radius: 18px;
-  margin: 2.5em;
 }
 .pricing__container-premium-price {
   text-align: center;
@@ -612,6 +645,7 @@ button:hover {
   margin-top: 5em;
   background: rgb(247, 247, 247);
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 .footer__display {
   align-items: center;
@@ -625,9 +659,15 @@ button:hover {
 }
 .footer__display-img-tw {
   margin-right: 1em;
+  position: absolute;
+  right: 5em;
+  bottom: 1.5em;
 }
 .footer__display-img-fc {
   margin-right: 1em;
+  position: absolute;
+  right: 2em;
+  bottom: 1.5em;
 }
 .footer__icon {
   font-size: 26px;
@@ -677,6 +717,8 @@ button:hover {
     width: 60%;
     min-height: 22em;
     margin-top: 4em;
+    min-width: 50em;
+    max-width: none;
   }
   .card__article--be {
     display: flex;
@@ -733,6 +775,7 @@ button:hover {
   .card__img__rectangle {
     width: 25em;
     height: 22em;
+    max-width: none;
   }
   .card__text-display-brand {
     max-width: 42%;
@@ -750,6 +793,9 @@ button:hover {
     margin-top: 1em;
     width: 70%;
   }
+  .card__text-info--brand {
+    max-width: none;
+  }
   .pricing__basic-button, .pricing__professional-button, .pricing__premium-button {
     top: 95%;
   }
@@ -760,6 +806,9 @@ button:hover {
   }
   .pricing__container-basic-display {
     display: block;
+  }
+  .pricing__container-basic, .pricing__container-professional, .pricing__container-premium {
+    margin: 2.5em;
   }
   .pricing__container-basic {
     border-radius: 18px;
@@ -778,8 +827,8 @@ button:hover {
   .pricing__container-basic-display {
     text-align: center;
     padding-top: 1.5em;
-    padding-left: 6em;
-    padding-right: 6em;
+    padding-left: 4.3em;
+    padding-right: 4.3em;
     padding-bottom: 4em;
   }
   .pricing__container-basic-professional {
